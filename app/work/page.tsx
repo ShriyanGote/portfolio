@@ -4,14 +4,14 @@ const projectsPage = () => {
   const Projects = [
     {
       "title": "ML MVP Predictor - NBA MVP Prediction Tool",
-      "image": "/images/ml-mvp-predictor.png",
+      "image": "/images/mvpdatagraph.png",
       "description": "Built using Python libraries such as Pandas, NumPy, BeautifulSoup, and TensorFlow, this tool predicts NBA MVP odds with 92% accuracy based on 30 years of NBA history. A Flask-powered frontend allows users to input desired statistics for predictions.",
       "tags": ["Python", "Flask", "NumPy", "TensorFlow", "Pandas"],
       "link": "https://github.com/ShriyanGote/mvpPointsNBA"
     },
     {
       "title": "Memory Game - Interactive React Game",
-      "image": "/images/memorygame.png",
+      "image": "/images/memory.png",
       "description": "A memory game built using React, leveraging time functions, transitions, and state management. The game enhances user engagement through smooth animations and responsive design.",
       "tags": ["React", "JavaScript", "HTML", "CSS"],
       "link": "https://github.com/ShriyanGote/MemoryGame"
@@ -24,8 +24,15 @@ const projectsPage = () => {
       "link": "https://github.com/ShriyanGote/Stacks"
     },
     {
+      "title": "Huffman Coder - Algorithm for Data Compression",
+      "image": "/images/huffman.png",
+      "description": "Successfully implemented Huffman Coding, a widely-used technique for data compression, in a project. By assigning shorter representations to frequently occurring symbols and longer representations to less common symbols, the project achieved efficient compression.",
+      "tags": ["C", "Linux", "Bash"],
+      "link": "https://github.com/ShriyanGote/Huffman"
+    },
+    {
       "title": "Colorblind Simulator - Image Processing Tool",
-      "image": "/images/colorblind-simulator.png",
+      "image": "/images/cb.png",
       "description": "Developed an image-processing program in C to simulate deuteranopia, assisting UI designers in creating accessible interfaces for users with red-green color blindness.",
       "tags": ["C", "Linux", "Bash"],
       "link": "https://github.com/ShriyanGote/Colorblind-Simu"
@@ -39,7 +46,7 @@ const projectsPage = () => {
     },
     {
       "title": "International Virtual Cottage - Virtual Environment",
-      "image": "/images/virtual-cottage.png",
+      "image": "/images/worldview.png",
       "description": "A virtual environment simulating local culture with music, food, and monuments using SDL2 and Pygame, providing an interactive experience inspired by the game Virtual Cottage.",
       "tags": ["Python", "SDL2", "Pygame"],
       "link": "https://github.com/ShriyanGote/WorldView-Wanderer"
