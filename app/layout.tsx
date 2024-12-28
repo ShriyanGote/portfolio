@@ -16,9 +16,10 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Shriyan Gote- Full Stack Developer & Software Engineer",
-  description: "Shriyan Gote is a computer engineering student engineer based in the bay area, specializing in full stack development and digital solutions. In the past he has, worked for Capital One as a software engineering intern and as a developer for the San Francisco 49ers as well as the Electric Power Research Institute",
+  description:
+    "Shriyan Gote is a computer engineering student engineer based in the bay area, specializing in full stack development and digital solutions. In the past he has worked for Capital One as a software engineering intern and as a developer for the San Francisco 49ers as well as the Electric Power Research Institute",
   keywords: ["Shriyan Gote", "computer engineering", "software engineer"],
-  authors: [{name: "Shriyan Gote"}],
+  authors: [{ name: "Shriyan Gote" }],
 };
 
 export default function RootLayout({
@@ -35,6 +36,36 @@ export default function RootLayout({
           <Header />
         </div>
         {children}
+
+        {/* Social Media Links Section */}
+        <footer className="mt-10 text-center">
+          <div className="flex justify-center gap-4">
+            <a
+              href="https://www.linkedin.com/in/shriyan-gote"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/shriyangote"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:underline"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.instagram.com/shriyangote"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-600 hover:underline"
+            >
+              Instagram
+            </a>
+          </div>
+        </footer>
       </body>
     </html>
   );
