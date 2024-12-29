@@ -23,7 +23,7 @@ function Header() {
       </nav>
 
       <div className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent md:ml-auto">
-        <Link href="/" className="font-bold text-3xl">Home</Link>
+        <Link href="/" className="font-bold text-3xl">Home - Shriyan Gote</Link>
       </div>
 
       <div className="md:hidden">

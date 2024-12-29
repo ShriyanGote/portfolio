@@ -11,14 +11,14 @@ const projectsPage = () => {
     },
     {
       "title": "Memory Game - Interactive React Game",
-      "image": "/images/memory.png",
+      "image": "/images/task.png",
       "description": "A memory game built using React, leveraging time functions, transitions, and state management. The game enhances user engagement through smooth animations and responsive design.",
       "tags": ["React", "JavaScript", "HTML", "CSS"],
       "link": "https://github.com/ShriyanGote/MemoryGame"
     },
     {
       "title": "Stacks - Competitive Sports Analytics App",
-      "image": "/images/stacks.png",
+      "image": "/images/stack.png",
       "description": "Created using SwiftUI for the front-end and AWS + Python for the back-end, Stacks offers users data-driven insights for sports categories, integrating live sports data and personalized analytics for enhanced decision-making.",
       "tags": ["SwiftUI", "AWS Lambda", "Python", "Pandas"],
       "link": "https://github.com/ShriyanGote/Stacks"
@@ -39,7 +39,7 @@ const projectsPage = () => {
     },
     {
       "title": "Multithreaded Dining Hall - Synchronization Program",
-      "image": "/images/dining-hall.png",
+      "image": "/images/multithread-dining.png",
       "description": "A C program implementing synchronization using semaphores and mutexes to manage entry and exit protocols for a university dining hall. It prioritizes cleaning operations to improve efficiency.",
       "tags": ["C", "Linux", "Semaphore", "Mutex"],
       "link": "https://github.com/UCSC-CSE-130/cse-130-project3-ShriyanGote"
@@ -53,14 +53,14 @@ const projectsPage = () => {
     },
     {
       "title": "Todo-Task List - Full-stack Task Management App",
-      "image": "/images/todo-task-list.png",
+      "image": "/images/memory.png",
       "description": "A full-stack application built with MongoDB, Express.js, React.js, Node.js, and Redux, providing task management capabilities with state handling and seamless communication between front-end and back-end components.",
       "tags": ["MongoDB", "Express.js", "React.js", "Node.js", "Redux"],
       "link": "https://github.com/ShriyanGote/todolist-mernstack"
     },
     {
       "title": "VGA Screensaver - Hardware Design Project",
-      "image": "/images/vga-screensaver.png",
+      "image": "/images/vga.png",
       "description": "Implemented a VGA screensaver on an FPGA using SystemVerilog and VHDL, showcasing expertise in digital logic design and hardware description languages.",
       "tags": ["SystemVerilog", "FPGA", "VHDL", "VGA"],
       "link": "https://github.com/ShriyanGote/VGA-Screensaver"
