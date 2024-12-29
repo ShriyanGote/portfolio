@@ -15,7 +15,7 @@ export default function Home() {
             href="/work"
             className="scroll-m-20 text-blue-400 text-2xl sm:text-3xl font-semibold tracking-tight first:mt-0 inline-block"
           >
-            view work
+            view projects
           </Link>
         </div>
         <div className="relative w-full max-w-[600px] md:flex-grow hidden md:block">

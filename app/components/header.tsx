@@ -5,9 +5,15 @@ import { Menu, X } from "lucide-react";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(""); // State to track active link
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleClick = (link: string) => {
+    setIsOpen(false);    // Close the menu (for mobile view)
+    setActiveLink(link); // Set the active link to the clicked one
   };
 
   return (
@@ -16,14 +22,23 @@ function Header() {
         <button onClick={toggleMenu} className="md:hidden absolute top-4 right-4">
           <X className="w-8 h-8" />
         </button>
-        <Link href="/work" onClick={() => setIsOpen(false)}>projects</Link>
-        <Link href="/information" onClick={() => setIsOpen(false)}>experience</Link>
-        <Link href="/contact" onClick={() => setIsOpen(false)}>contact</Link>
-        <Link href="/ShriyanGoteResume.pdf" onClick={() => setIsOpen(false)}>resume</Link>
+        {/* Links with conditional bolding */}
+        <Link href="/work" onClick={() => handleClick("/work")} className={activeLink === "/work" ? "font-bold" : ""}>
+          projects
+        </Link>
+        <Link href="/information" onClick={() => handleClick("/information")} className={activeLink === "/information" ? "font-bold" : ""}>
+          experience
+        </Link>
+        <Link href="/contact" onClick={() => handleClick("/contact")} className={activeLink === "/contact" ? "font-bold" : ""}>
+          contact
+        </Link>
+        <Link href="/ShriyanGoteResume.pdf" onClick={() => handleClick("/ShriyanGoteResume.pdf")} className={activeLink === "/ShriyanGoteResume.pdf" ? "font-bold" : ""}>
+          resume
+        </Link>
       </nav>
 
       <div className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent md:ml-auto">
-        <Link href="/" className="font-bold text-3xl">Home - Shriyan Gote</Link>
+        <Link href="/" className="font-bold text-3xl">Home</Link>
       </div>
 
       <div className="md:hidden">

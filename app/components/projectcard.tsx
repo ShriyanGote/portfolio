@@ -38,9 +38,11 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
           />
         </div>
 
-        <CardHeader>
+        {/* Centered CardHeader */}
+        <CardHeader className="flex flex-col items-center justify-center text-center">
           <CardTitle>{value.title}</CardTitle>
         </CardHeader>
+
         <CardContent>
           <p className="text-base font-poppins">{value.description}</p>
           <div className="w-full h-fit flex mt-2 justify-center flex-wrap gap-2 overflow-hidden">
@@ -68,6 +70,7 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
             </div>
           </div>
         </CardContent>
+
         {/* Add margin to move the footer lower */}
         <CardFooter className="items-center justify-center flex mt-4">
           <Link
@@ -78,7 +81,7 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
               "flex"
             )}
           >
-            Visit Project <ArrowUpRight className="h-5 w-5 ml-1" />
+            Github Respository <ArrowUpRight className="h-5 w-5 ml-1" />
           </Link>
         </CardFooter>
       </Card>
