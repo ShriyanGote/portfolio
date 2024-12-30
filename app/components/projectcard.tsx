@@ -27,7 +27,9 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
       delay={num / 4}
       duration={0.15}
     >
-      <Card className="w-full h-full">
+      <Card
+        className="w-full h-full border border-gray-300 rounded-lg p-4 transition-transform transform hover:scale-105 hover:shadow-lg"
+      >
         <div className="relative w-full h-[400px] flex items-center justify-center">
           <Image
             src={value.image}
@@ -38,12 +40,13 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
           />
         </div>
 
-        {/* Centered CardHeader */}
         <CardHeader className="flex flex-col items-center justify-center text-center">
-          <CardTitle>{value.title}</CardTitle>
+          <CardTitle className="transition-colors hover:text-gray-700">
+            {value.title}
+          </CardTitle>
         </CardHeader>
 
-        <CardContent>
+        <CardContent className="px-4 py-2 text-center">
           <p className="text-base font-poppins">{value.description}</p>
           <div className="w-full h-fit flex mt-2 justify-center flex-wrap gap-2 overflow-hidden">
             <div className="max-w-full overflow-auto flex gap-2 flex-wrap">
@@ -60,7 +63,7 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
                         : itm === "Typescript"
                         ? "bg-red-100 text-red-800"
                         : "bg-gray-100 text-gray-800"
-                    }`}
+                    } transition-all transform hover:scale-105`}
                     key={indx}
                   >
                     {itm}
@@ -71,17 +74,13 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
           </div>
         </CardContent>
 
-        {/* Add margin to move the footer lower */}
-        <CardFooter className="items-center justify-center flex mt-4">
+        <CardFooter className="items-center justify-center flex mt-4 px-4">
           <Link
             href={value.link}
             target="blank"
-            className={cn(
-              buttonVariants({ variant: "default", size: "lg" }),
-              "flex"
-            )}
+            className="flex items-center justify-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 hover:scale-105 transition-transform transform"
           >
-            Github Respository <ArrowUpRight className="h-5 w-5 ml-1" />
+            Github Repository <ArrowUpRight className="h-5 w-5 ml-1" />
           </Link>
         </CardFooter>
       </Card>
