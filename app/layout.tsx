@@ -17,7 +17,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Shriyan Gote- Full Stack Developer & Software Engineer",
   description:
-    "Shriyan Gote is a computer engineering student engineer based in the bay area, specializing in full stack development and digital solutions. In the past he has worked for Capital One as a software engineering intern and as a developer for the San Francisco 49ers as well as the Electric Power Research Institute",
+    "Shriyan Gote is a computer engineering student based in the bay area, specializing in full stack development and digital solutions. In the past he has worked for Capital One as a software engineering intern and as a developer for the San Francisco 49ers as well as the Electric Power Research Institute",
   keywords: ["Shriyan Gote", "computer engineering", "software engineer"],
   authors: [{ name: "Shriyan Gote" }],
 };
