@@ -7,7 +7,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-center justify-center w-full h-full gap-10 md:gap-20 mt-40 lg:mt-0">
         <div className="max-w-6xl flex flex-col gap-5 text-center md:text-left">
           <h2 className="scroll-m-20 text-2xl sm:text-3xl font-extralight tracking-tight first:mt-0">
-            Shriyan Gote is a computer engineering student engineer based in the bay area, specializing
+            Shriyan Gote is a computer engineering student based in the bay area, specializing
             in full stack development and digital solutions. In the past he has, worked for Capital One as a software
             engineering intern and as a developer for the San Francisco 49ers as well as the Electric Power Research Institute
           </h2>
