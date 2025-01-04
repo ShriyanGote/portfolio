@@ -1,12 +1,19 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState(""); // State to track active link
   const [showSocialLinks, setShowSocialLinks] = useState(true); // State to control social media visibility
+  const pathname = usePathname(); // Get the current route
+
+  useEffect(() => {
+    // Hide social links if on home page
+    setShowSocialLinks(pathname !== "/");
+  }, [pathname]); // Run effect whenever pathname changes
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,11 +22,6 @@ function Header() {
   const handleClick = (link: string) => {
     setIsOpen(false); // Close the menu (for mobile view)
     setActiveLink(link); // Set the active link to the clicked one
-
-    // Hide social media links if the Home button is pressed
-    if (link === "/") {
-      setShowSocialLinks(false);
-    }
   };
 
   return (

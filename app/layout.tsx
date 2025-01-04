@@ -38,34 +38,6 @@ export default function RootLayout({
         {children}
 
         {/* Social Media Links Section */}
-        <footer className="mt-10 text-center">
-          <div className="flex justify-center gap-4">
-            <a
-              href="https://www.linkedin.com/in/shriyan-gote"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/shriyangote"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:underline"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.instagram.com/shriyangote"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-600 hover:underline"
-            >
-              Instagram
-            </a>
-          </div>
-        </footer>
       </body>
     </html>
   );
