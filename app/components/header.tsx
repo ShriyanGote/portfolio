@@ -80,7 +80,7 @@ function Header() {
               href="https://github.com/shriyangote"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-600 transition-colors"
+              className="hover:text-green-600 transition-colors"
             >
               GitHub
             </a>
@@ -100,7 +100,7 @@ function Header() {
           onClick={() => handleClick("/")}
           className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent font-bold text-3xl"
         >
-          Home
+          Shriyan Gote
         </Link>
       </div>
 
